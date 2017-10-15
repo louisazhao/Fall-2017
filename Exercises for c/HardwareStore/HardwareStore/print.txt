@@ -1,0 +1,8 @@
+ID        Tool name         Quantity      Cost
+3         ElectricSander          27     57.98
+17        Hammer                  76     11.99
+24        JigSaw                  21     11.00
+39        LawnMower                3     79.50
+56        PowerSaw                18     99.99
+68        Screwdriver            106      6.99
+77        SledgeHammer            11     21.50
