@@ -1,0 +1,6 @@
+txt_2/Cicero.txt
+txt_2/Far far away.txt
+txt_2/Kafka.txt
+txt_2/Li Europan lingues.txt
+txt_2/Pangram.txt
+txt_2/Werther.txt
