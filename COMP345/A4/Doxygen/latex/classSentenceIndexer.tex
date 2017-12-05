@@ -1,0 +1,87 @@
+\hypertarget{classSentenceIndexer}{\section{Sentence\-Indexer Class Reference}
+\label{classSentenceIndexer}\index{Sentence\-Indexer@{Sentence\-Indexer}}
+}
+Inheritance diagram for Sentence\-Indexer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSentenceIndexer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSentenceIndexer_a2ec9f359954191ebc5d84c759fd2238d}{Sentence\-Indexer} ()
+\item 
+\hyperlink{classSentenceIndexer_a3402eb910551128d0c8ecb33cf0bae42}{$\sim$\-Sentence\-Indexer} ()
+\item 
+virtual const std\-::vector\\*
+$<$ \hyperlink{classQueryResult}{Query\-Result} $>$ \hyperlink{classSentenceIndexer_ac9b17bde40b851d8e0c263ce2241b9c4}{query} (const std\-::string, const unsigned int=500) override
+\item 
+\hypertarget{classSentenceIndexer_ad136814c8e5fc13c05a35cff6c15506b}{virtual const std\-::vector\\*
+$<$ \hyperlink{classQueryResult}{Query\-Result} $>$ {\bfseries query\-By\-Count} (const std\-::string, const unsigned int=10) override}\label{classSentenceIndexer_ad136814c8e5fc13c05a35cff6c15506b}
+
+\item 
+virtual const \hyperlink{classIndexItem}{Index\-Item} $\ast$ \hyperlink{classSentenceIndexer_ae2822279343f3957edabf9cd3c1ef254}{operator\mbox{[}$\,$\mbox{]}} (unsigned long) const override
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSentenceIndexer_a28ba47a4a3b51dc012fa2f8fb194ab22}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&, const \hyperlink{classSentenceIndexer}{Sentence\-Indexer} \&)}\label{classSentenceIndexer_a28ba47a4a3b51dc012fa2f8fb194ab22}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSentenceIndexer_a2ec9f359954191ebc5d84c759fd2238d}{\index{Sentence\-Indexer@{Sentence\-Indexer}!Sentence\-Indexer@{Sentence\-Indexer}}
+\index{Sentence\-Indexer@{Sentence\-Indexer}!SentenceIndexer@{Sentence\-Indexer}}
+\subsubsection[{Sentence\-Indexer}]{\setlength{\rightskip}{0pt plus 5cm}Sentence\-Indexer\-::\-Sentence\-Indexer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSentenceIndexer_a2ec9f359954191ebc5d84c759fd2238d}
+Default constructor \hypertarget{classSentenceIndexer_a3402eb910551128d0c8ecb33cf0bae42}{\index{Sentence\-Indexer@{Sentence\-Indexer}!$\sim$\-Sentence\-Indexer@{$\sim$\-Sentence\-Indexer}}
+\index{$\sim$\-Sentence\-Indexer@{$\sim$\-Sentence\-Indexer}!SentenceIndexer@{Sentence\-Indexer}}
+\subsubsection[{$\sim$\-Sentence\-Indexer}]{\setlength{\rightskip}{0pt plus 5cm}Sentence\-Indexer\-::$\sim$\-Sentence\-Indexer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSentenceIndexer_a3402eb910551128d0c8ecb33cf0bae42}
+Default destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSentenceIndexer_ae2822279343f3957edabf9cd3c1ef254}{\index{Sentence\-Indexer@{Sentence\-Indexer}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!SentenceIndexer@{Sentence\-Indexer}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Index\-Item} $\ast$ Sentence\-Indexer\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classSentenceIndexer_ae2822279343f3957edabf9cd3c1ef254}
+Get the index\-Item at given position \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classIndexer_a2f2530920425342d0b4f8652c7368ecd}{Indexer}.
+
+\hypertarget{classSentenceIndexer_ac9b17bde40b851d8e0c263ce2241b9c4}{\index{Sentence\-Indexer@{Sentence\-Indexer}!query@{query}}
+\index{query@{query}!SentenceIndexer@{Sentence\-Indexer}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ {\bf Query\-Result} $>$ Sentence\-Indexer\-::query (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{s, }
+\item[{const unsigned int}]{top = {\ttfamily 500}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classSentenceIndexer_ac9b17bde40b851d8e0c263ce2241b9c4}
+Query by giving string \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classIndexer_abd1dd6a6da0c9e43efaa99866c538e6c}{Indexer}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+headers/Sentence\-Indexer.\-h\item 
+implementation/Sentence\-Indexer.\-cpp\end{DoxyCompactItemize}
