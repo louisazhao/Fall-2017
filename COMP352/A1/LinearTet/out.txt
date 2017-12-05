@@ -1,0 +1,41 @@
+Runtime records for the linear tetranacci method:
+Tetranacci(5) is 2
+Runing binaryTet(5) takes 809544 nanoseconds.
+Tetranacci(10) is 56
+Runing binaryTet(10) takes 17868 nanoseconds.
+Tetranacci(15) is 1490
+Runing binaryTet(15) takes 39732 nanoseconds.
+Tetranacci(20) is 39648
+Runing binaryTet(20) takes 38199 nanoseconds.
+Tetranacci(25) is 1055026
+Runing binaryTet(25) takes 64696 nanoseconds.
+Tetranacci(30) is 28074040
+Runing binaryTet(30) takes 81585 nanoseconds.
+Tetranacci(35) is 747044834
+Runing binaryTet(35) takes 93816 nanoseconds.
+Tetranacci(40) is 19878720128
+Runing binaryTet(40) takes 98573 nanoseconds.
+Tetranacci(45) is 528968939938
+Runing binaryTet(45) takes 77982 nanoseconds.
+Tetranacci(50) is 14075762303480
+Runing binaryTet(50) takes 76036 nanoseconds.
+Tetranacci(55) is 374553342295090
+Runing binaryTet(55) takes 85947 nanoseconds.
+Tetranacci(60) is 9966792788887776
+Runing binaryTet(60) takes 91516 nanoseconds.
+Tetranacci(65) is 265214449530564434
+Runing binaryTet(65) takes 72826 nanoseconds.
+Tetranacci(70) is 7057305768232953720
+Runing binaryTet(70) takes 65657 nanoseconds.
+Tetranacci(75) is 187793556476621449410
+Runing binaryTet(75) takes 78993 nanoseconds.
+Tetranacci(80) is 4997150614173857218560
+Runing binaryTet(80) takes 67399 nanoseconds.
+Tetranacci(85) is 132973221921205159159874
+Runing binaryTet(85) takes 80895 nanoseconds.
+Tetranacci(90) is 3538391998422743815303864
+Runing binaryTet(90) takes 114070 nanoseconds.
+Tetranacci(95) is 94155934206972141509219218
+Runing binaryTet(95) takes 45117 nanoseconds.
+Tetranacci(100) is 2505471397838180985096739296
+Runing binaryTet(100) takes 39162 nanoseconds.

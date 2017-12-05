@@ -1,0 +1,15 @@
+Runtime records for the quaternary tetranacci method:
+Tetranacci(5) is 2
+Runing binaryTet(5) takes 1060801 nanoseconds.
+Tetranacci(10) is 56
+Runing binaryTet(10) takes 92448 nanoseconds.
+Tetranacci(15) is 1490
+Runing binaryTet(15) takes 2069421 nanoseconds.
+Tetranacci(20) is 39648
+Runing binaryTet(20) takes 10132704 nanoseconds.
+Tetranacci(25) is 1055026
+Runing binaryTet(25) takes 105887144 nanoseconds.
+Tetranacci(30) is 28074040
+Runing binaryTet(30) takes 947653998 nanoseconds.
+Tetranacci(35) is 747044834
+Runing binaryTet(35) takes 21805548846 nanoseconds.
