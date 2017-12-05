@@ -1,0 +1,201 @@
+\hypertarget{classIndexer}{}\section{Indexer Class Reference}
+\label{classIndexer}\index{Indexer@{Indexer}}
+
+
+Inheritance diagram for Indexer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classIndexer__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIndexer_ac4c8c21c68d62185ceddbad8781e3b67}{Indexer} ()
+\item 
+\hyperlink{classIndexer_aaf5971639a7a2e3d9af4d8da62deb6f4}{$\sim$\+Indexer} ()
+\item 
+const long \hyperlink{classIndexer_af8decd4e68c48e73adec4cd5ed060dc9}{get\+Size} () const
+\item 
+const std\+::map$<$ const std\+::string, unsigned long $>$ \hyperlink{classIndexer_a92be0b09f21160df9e927d76dfbe48d1}{get\+Dictionary} ()
+\item 
+void \hyperlink{classIndexer_ae090be1899c4ce1e4baeb0acfe12cdee}{normalize} ()
+\item 
+const double \hyperlink{classIndexer_a23203a94532e8ba0054c1c282b666b94}{get\+Document\+Frequency} (const std\+::string \&t) const
+\item 
+const double \hyperlink{classIndexer_afae44a5845c0b2f29bd9951894eec941}{get\+Weight} (const std\+::string \&t, const \hyperlink{classIndexItem}{Index\+Item} \&d) const
+\item 
+virtual const std\+::vector$<$ \hyperlink{classQueryResult}{Query\+Result} $>$ \hyperlink{classIndexer_abd1dd6a6da0c9e43efaa99866c538e6c}{query} (const std\+::string, const unsigned int=10)
+\item 
+virtual const \hyperlink{classIndexItem}{Index\+Item} \& \hyperlink{classIndexer_ac9a2012415a2b06251852047e30bf618}{operator\mbox{[}$\,$\mbox{]}} (unsigned long) const
+\item 
+\mbox{\Hypertarget{classIndexer_af7e039dbdd74e84036b37510bf621f2b}\label{classIndexer_af7e039dbdd74e84036b37510bf621f2b}} 
+const unsigned long {\bfseries search\+Dictionary} (std\+::map$<$ const std\+::string, unsigned long $>$ dic\+Map, const std\+::string word) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{classIndexer_a3ed434e77eb37143f76b940e37cd878e}{query\+Weight} (const std\+::string \&w, std\+::vector$<$ std\+::string $>$ queries) const
+\item 
+\mbox{\Hypertarget{classIndexer_a81e5a541f5801dfd920204e5658e6041}\label{classIndexer_a81e5a541f5801dfd920204e5658e6041}} 
+const std\+::multimap$<$ const double, const \hyperlink{classIndexItem}{Index\+Item}, std\+::greater$<$ double $>$ $>$ {\bfseries score} (const std\+::vector$<$ std\+::string $>$ queries) const
+\item 
+\mbox{\Hypertarget{classIndexer_a9d4586811c2b1309d992f4bbd658c642}\label{classIndexer_a9d4586811c2b1309d992f4bbd658c642}} 
+void {\bfseries merge\+Dictionary} (const std\+::map$<$ const std\+::string, unsigned long $>$ \&local\+Map)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexer_acf4b55a819c5aa20627d82fa5db6d6b4}\label{classIndexer_acf4b55a819c5aa20627d82fa5db6d6b4}} 
+unsigned long {\bfseries size}
+\item 
+\mbox{\Hypertarget{classIndexer_aca2bf335cd368f8c7d7772030ee8d7b2}\label{classIndexer_aca2bf335cd368f8c7d7772030ee8d7b2}} 
+std\+::vector$<$ \hyperlink{classIndexItem}{Index\+Item} $>$ {\bfseries item\+List}
+\item 
+\mbox{\Hypertarget{classIndexer_a31dba7bca42ac3ca2a7fef6a4f6e6662}\label{classIndexer_a31dba7bca42ac3ca2a7fef6a4f6e6662}} 
+std\+::map$<$ const std\+::string, unsigned long $>$ {\bfseries dictionary}
+\item 
+\mbox{\Hypertarget{classIndexer_aeed3684e566f3970a43bd78524ad0b2c}\label{classIndexer_aeed3684e566f3970a43bd78524ad0b2c}} 
+std\+::map$<$ const std\+::string, std\+::multimap$<$ const double, const \hyperlink{classIndexItem}{Index\+Item} $>$ $>$ {\bfseries tf\+\_\+idf\+\_\+map}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexer_ad9c367f7e3c8863e70f9967d69f29404}\label{classIndexer_ad9c367f7e3c8863e70f9967d69f29404}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, const \hyperlink{classIndexer}{Indexer} \&)
+\item 
+void \hyperlink{classIndexer_a3169c2dd098e8a2c7f5c4bb628766720}{operator$>$$>$} (const \hyperlink{classIndexItem}{Index\+Item} \&, \hyperlink{classIndexer}{Indexer} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIndexer_ac4c8c21c68d62185ceddbad8781e3b67}\label{classIndexer_ac4c8c21c68d62185ceddbad8781e3b67}} 
+\index{Indexer@{Indexer}!Indexer@{Indexer}}
+\index{Indexer@{Indexer}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{Indexer()}{Indexer()}}
+{\footnotesize\ttfamily Indexer\+::\+Indexer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default constructor, which creates an empty index \mbox{\Hypertarget{classIndexer_aaf5971639a7a2e3d9af4d8da62deb6f4}\label{classIndexer_aaf5971639a7a2e3d9af4d8da62deb6f4}} 
+\index{Indexer@{Indexer}!````~Indexer@{$\sim$\+Indexer}}
+\index{````~Indexer@{$\sim$\+Indexer}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{$\sim$\+Indexer()}{~Indexer()}}
+{\footnotesize\ttfamily Indexer\+::$\sim$\+Indexer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIndexer_a92be0b09f21160df9e927d76dfbe48d1}\label{classIndexer_a92be0b09f21160df9e927d76dfbe48d1}} 
+\index{Indexer@{Indexer}!get\+Dictionary@{get\+Dictionary}}
+\index{get\+Dictionary@{get\+Dictionary}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{get\+Dictionary()}{getDictionary()}}
+{\footnotesize\ttfamily const std\+::map$<$ const std\+::string, unsigned long $>$ Indexer\+::get\+Dictionary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The map storing word and its count \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexer_a23203a94532e8ba0054c1c282b666b94}\label{classIndexer_a23203a94532e8ba0054c1c282b666b94}} 
+\index{Indexer@{Indexer}!get\+Document\+Frequency@{get\+Document\+Frequency}}
+\index{get\+Document\+Frequency@{get\+Document\+Frequency}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{get\+Document\+Frequency()}{getDocumentFrequency()}}
+{\footnotesize\ttfamily const double Indexer\+::get\+Document\+Frequency (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t }\end{DoxyParamCaption}) const}
+
+Calculate document frequency The document frequency df t for a term t is defined as the number of documents that t appears in 
+\begin{DoxyParams}{Parameters}
+{\em t} & term \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+df 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexer_af8decd4e68c48e73adec4cd5ed060dc9}\label{classIndexer_af8decd4e68c48e73adec4cd5ed060dc9}} 
+\index{Indexer@{Indexer}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily const long Indexer\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the number of documents in the index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexer_afae44a5845c0b2f29bd9951894eec941}\label{classIndexer_afae44a5845c0b2f29bd9951894eec941}} 
+\index{Indexer@{Indexer}!get\+Weight@{get\+Weight}}
+\index{get\+Weight@{get\+Weight}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{get\+Weight()}{getWeight()}}
+{\footnotesize\ttfamily const double Indexer\+::get\+Weight (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t,  }\item[{const \hyperlink{classIndexItem}{Index\+Item} \&}]{d }\end{DoxyParamCaption}) const}
+
+Calculate term weight the tf-\/idf weight of a term t in a document d is defined as the given formula 
+\begin{DoxyParams}{Parameters}
+{\em t} & term \\
+\hline
+{\em d} & document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+term weight 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexer_ae090be1899c4ce1e4baeb0acfe12cdee}\label{classIndexer_ae090be1899c4ce1e4baeb0acfe12cdee}} 
+\index{Indexer@{Indexer}!normalize@{normalize}}
+\index{normalize@{normalize}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily void Indexer\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+computes the tf-\/idf weights based on the number N of indexed documents \mbox{\Hypertarget{classIndexer_ac9a2012415a2b06251852047e30bf618}\label{classIndexer_ac9a2012415a2b06251852047e30bf618}} 
+\index{Indexer@{Indexer}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily const \hyperlink{classIndexItem}{Index\+Item} \& Indexer\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned long}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+provides access to its indexed documents with an overloaded operator\mbox{[}\mbox{]}\+: e.\+g., idx\mbox{[}3\mbox{]} would return the fourth document in the index, as an object of class document. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classSentenceIndexer_a0c0b7ee70c1d183e6bd6ca4ee412831c}{Sentence\+Indexer}.
+
+\mbox{\Hypertarget{classIndexer_abd1dd6a6da0c9e43efaa99866c538e6c}\label{classIndexer_abd1dd6a6da0c9e43efaa99866c538e6c}} 
+\index{Indexer@{Indexer}!query@{query}}
+\index{query@{query}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily const vector$<$ \hyperlink{classQueryResult}{Query\+Result} $>$ Indexer\+::query (\begin{DoxyParamCaption}\item[{const std\+::string}]{s,  }\item[{const unsigned int}]{top = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+query the index with the provided string. By default, it returns the top-\/10 results, but this can be overridden on a per-\/query basis (optional second argument). If the index has not been normalized, attempting to query it will throw an exception (adding a new document after normalization also results in a non-\/normalized index). The \hyperlink{classIndexer_abd1dd6a6da0c9e43efaa99866c538e6c}{query()} function returns a vector$<$query result$>$, where each result object has a document and its score. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classSentenceIndexer_ac9b17bde40b851d8e0c263ce2241b9c4}{Sentence\+Indexer}.
+
+\mbox{\Hypertarget{classIndexer_a3ed434e77eb37143f76b940e37cd878e}\label{classIndexer_a3ed434e77eb37143f76b940e37cd878e}} 
+\index{Indexer@{Indexer}!query\+Weight@{query\+Weight}}
+\index{query\+Weight@{query\+Weight}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{query\+Weight()}{queryWeight()}}
+{\footnotesize\ttfamily const double Indexer\+::query\+Weight (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{w,  }\item[{std\+::vector$<$ std\+::string $>$}]{queries }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+the weight of query string 
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em queries} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classIndexer_a3169c2dd098e8a2c7f5c4bb628766720}\label{classIndexer_a3169c2dd098e8a2c7f5c4bb628766720}} 
+\index{Indexer@{Indexer}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Indexer@{Indexer}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily void operator$>$$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classIndexItem}{Index\+Item} \&}]{d,  }\item[{\hyperlink{classIndexer}{Indexer} \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+A new document can be read into the index through an overloaded extractor (operator$>$$>$) \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Indexer.\+h\item 
+implementation/Indexer.\+cpp\end{DoxyCompactItemize}

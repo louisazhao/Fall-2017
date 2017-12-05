@@ -1,0 +1,100 @@
+\hypertarget{classDocument}{}\section{Document Class Reference}
+\label{classDocument}\index{Document@{Document}}
+
+
+{\ttfamily \#include $<$Document.\+h$>$}
+
+
+
+Inheritance diagram for Document\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classDocument__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Document\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classDocument__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}{Document} ()
+\item 
+\hyperlink{classDocument_a11e577354c64a23106b0cf34c11e712f}{Document} (const std\+::string \&file\+Name)
+\item 
+const void \hyperlink{classDocument_a9c9a23f1b4651aff6b885c2a69bc76d2}{tokenize\+By\+Content} (const std\+::string \&file\+Name, const std\+::string \&content)
+\item 
+const std\+::size\+\_\+t \hyperlink{classDocument_a81ccfd6f3de713047ccb52a45842dc26}{get\+Size} () const override final
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDocument_a801e6c851261e550881c632d31407c55}\label{classDocument_a801e6c851261e550881c632d31407c55}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, const \hyperlink{classDocument}{Document} \&)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A document object d represents one document in your index.\textbackslash{} It provides a default constructor,which creates an empty document, a constructor that accepts a file name and reads the file contents into the document object. Each document provides the functions name() (returns the file name of the document), size() (size in characters), content() (returns the text of the document). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}\label{classDocument_acdbcbe550084e8c20f4f67eb229ad66a}} 
+\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\subsubsection{\texorpdfstring{Document()}{Document()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Document\+::\+Document (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{classDocument_a11e577354c64a23106b0cf34c11e712f}\label{classDocument_a11e577354c64a23106b0cf34c11e712f}} 
+\index{Document@{Document}!Document@{Document}}
+\index{Document@{Document}!Document@{Document}}
+\subsubsection{\texorpdfstring{Document()}{Document()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Document\+::\+Document (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+Constructor accepts a file name and reads the file contents into the document object 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+!! size is in characters !!!// 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDocument_a81ccfd6f3de713047ccb52a45842dc26}\label{classDocument_a81ccfd6f3de713047ccb52a45842dc26}} 
+\index{Document@{Document}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Document@{Document}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily const size\+\_\+t Document\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get document size \begin{DoxyReturn}{Returns}
+the size of document 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classIndexItem_a37bb9320946eedfe8360bc740eb0c11b}{Index\+Item}.
+
+\mbox{\Hypertarget{classDocument_a9c9a23f1b4651aff6b885c2a69bc76d2}\label{classDocument_a9c9a23f1b4651aff6b885c2a69bc76d2}} 
+\index{Document@{Document}!tokenize\+By\+Content@{tokenize\+By\+Content}}
+\index{tokenize\+By\+Content@{tokenize\+By\+Content}!Document@{Document}}
+\subsubsection{\texorpdfstring{tokenize\+By\+Content()}{tokenizeByContent()}}
+{\footnotesize\ttfamily const void Document\+::tokenize\+By\+Content (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{const std\+::string \&}]{content }\end{DoxyParamCaption})}
+
+Tokenizer a file by giving file name and its content 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+{\em content} & \\
+\hline
+\end{DoxyParams}
+!! size is in wrods !!!// 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Document.\+h\item 
+implementation/Document.\+cpp\end{DoxyCompactItemize}

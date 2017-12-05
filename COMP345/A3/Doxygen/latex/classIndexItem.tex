@@ -1,0 +1,138 @@
+\hypertarget{classIndexItem}{}\section{Index\+Item Class Reference}
+\label{classIndexItem}\index{Index\+Item@{Index\+Item}}
+
+
+Inheritance diagram for Index\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classIndexItem__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIndexItem_aa37a5377a9cdd5993b09baad3d842a6f}{Index\+Item} ()
+\item 
+virtual \hyperlink{classIndexItem_a6225b6cb69e5dc134d2a7cea952cdd17}{$\sim$\+Index\+Item} ()
+\item 
+const std\+::string \hyperlink{classIndexItem_a269c754227e606efd271bea3e56701f8}{get\+File\+Name} () const
+\item 
+const std\+::map$<$ const std\+::string, unsigned long $>$ \hyperlink{classIndexItem_a08880ba5d6f18be5b08184df13f37e9f}{get\+Dictionary} () const
+\item 
+virtual const std\+::size\+\_\+t \hyperlink{classIndexItem_a37bb9320946eedfe8360bc740eb0c11b}{get\+Size} () const
+\item 
+const std\+::string \hyperlink{classIndexItem_a0cc1631297cb3859a2faecda7062805b}{get\+Content} () const
+\item 
+const std\+::vector$<$ std\+::string $>$ \hyperlink{classIndexItem_ae37a9af94cfcc8f76fd3081b8096b31a}{get\+Tokens} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexItem_a67e954645b9cd94b033c09dc9734b5ea}\label{classIndexItem_a67e954645b9cd94b033c09dc9734b5ea}} 
+std\+::string {\bfseries file\+Name}
+\item 
+\mbox{\Hypertarget{classIndexItem_a259507ae46a62a2411a102b17b731c1f}\label{classIndexItem_a259507ae46a62a2411a102b17b731c1f}} 
+std\+::size\+\_\+t {\bfseries size}
+\item 
+\mbox{\Hypertarget{classIndexItem_a0ff78840db32dd97333a49d69e62ffe6}\label{classIndexItem_a0ff78840db32dd97333a49d69e62ffe6}} 
+std\+::string {\bfseries content}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classIndexItem_a36ee76ec7176493ed48952d6231c29f2}{tokens}
+\item 
+std\+::map$<$ const std\+::string, unsigned long $>$ \hyperlink{classIndexItem_a667ce7eb5e6f22b032dcacd042d89cd3}{dictionary}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexItem_acb212461465a08ba81c6b0f35e1151a2}\label{classIndexItem_acb212461465a08ba81c6b0f35e1151a2}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, const \hyperlink{classIndexItem}{Index\+Item} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIndexItem_aa37a5377a9cdd5993b09baad3d842a6f}\label{classIndexItem_aa37a5377a9cdd5993b09baad3d842a6f}} 
+\index{Index\+Item@{Index\+Item}!Index\+Item@{Index\+Item}}
+\index{Index\+Item@{Index\+Item}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{Index\+Item()}{IndexItem()}}
+{\footnotesize\ttfamily Index\+Item\+::\+Index\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{classIndexItem_a6225b6cb69e5dc134d2a7cea952cdd17}\label{classIndexItem_a6225b6cb69e5dc134d2a7cea952cdd17}} 
+\index{Index\+Item@{Index\+Item}!````~Index\+Item@{$\sim$\+Index\+Item}}
+\index{````~Index\+Item@{$\sim$\+Index\+Item}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{$\sim$\+Index\+Item()}{~IndexItem()}}
+{\footnotesize\ttfamily Index\+Item\+::$\sim$\+Index\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIndexItem_a0cc1631297cb3859a2faecda7062805b}\label{classIndexItem_a0cc1631297cb3859a2faecda7062805b}} 
+\index{Index\+Item@{Index\+Item}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{get\+Content()}{getContent()}}
+{\footnotesize\ttfamily const std\+::string Index\+Item\+::get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the content of this file \begin{DoxyReturn}{Returns}
+the content of this file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexItem_a08880ba5d6f18be5b08184df13f37e9f}\label{classIndexItem_a08880ba5d6f18be5b08184df13f37e9f}} 
+\index{Index\+Item@{Index\+Item}!get\+Dictionary@{get\+Dictionary}}
+\index{get\+Dictionary@{get\+Dictionary}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{get\+Dictionary()}{getDictionary()}}
+{\footnotesize\ttfamily const std\+::map$<$ const std\+::string, unsigned long $>$ Index\+Item\+::get\+Dictionary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the dictionary map \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexItem_a269c754227e606efd271bea3e56701f8}\label{classIndexItem_a269c754227e606efd271bea3e56701f8}} 
+\index{Index\+Item@{Index\+Item}!get\+File\+Name@{get\+File\+Name}}
+\index{get\+File\+Name@{get\+File\+Name}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{get\+File\+Name()}{getFileName()}}
+{\footnotesize\ttfamily const std\+::string Index\+Item\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get file name \begin{DoxyReturn}{Returns}
+the value of file name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexItem_a37bb9320946eedfe8360bc740eb0c11b}\label{classIndexItem_a37bb9320946eedfe8360bc740eb0c11b}} 
+\index{Index\+Item@{Index\+Item}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily const std\+::size\+\_\+t Index\+Item\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the size of this file \begin{DoxyReturn}{Returns}
+the size in characters of this file 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classDocument_a81ccfd6f3de713047ccb52a45842dc26}{Document}, and \hyperlink{classSentence_a2f55ca4244f2ee9c1762019b37734330}{Sentence}.
+
+\mbox{\Hypertarget{classIndexItem_ae37a9af94cfcc8f76fd3081b8096b31a}\label{classIndexItem_ae37a9af94cfcc8f76fd3081b8096b31a}} 
+\index{Index\+Item@{Index\+Item}!get\+Tokens@{get\+Tokens}}
+\index{get\+Tokens@{get\+Tokens}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{get\+Tokens()}{getTokens()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ Index\+Item\+::get\+Tokens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get tokens \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classIndexItem_a667ce7eb5e6f22b032dcacd042d89cd3}\label{classIndexItem_a667ce7eb5e6f22b032dcacd042d89cd3}} 
+\index{Index\+Item@{Index\+Item}!dictionary@{dictionary}}
+\index{dictionary@{dictionary}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{dictionary}{dictionary}}
+{\footnotesize\ttfamily std\+::map$<$const std\+::string, unsigned long$>$ Index\+Item\+::dictionary\hspace{0.3cm}{\ttfamily [protected]}}
+
+word and word count in the index\+Item \mbox{\Hypertarget{classIndexItem_a36ee76ec7176493ed48952d6231c29f2}\label{classIndexItem_a36ee76ec7176493ed48952d6231c29f2}} 
+\index{Index\+Item@{Index\+Item}!tokens@{tokens}}
+\index{tokens@{tokens}!Index\+Item@{Index\+Item}}
+\subsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Index\+Item\+::tokens\hspace{0.3cm}{\ttfamily [protected]}}
+
+words in the index\+Item 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Index\+Item.\+h\item 
+implementation/Index\+Item.\+cpp\end{DoxyCompactItemize}
