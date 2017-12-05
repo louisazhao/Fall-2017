@@ -1,0 +1,28 @@
+N = 10:
+BST                  2672204 nanoseconds
+AVL                  1845194 nanoseconds
+BST(rev-sorted)      2113536 nanoseconds
+AVL(rev-sorted)      133027 nanoseconds
+
+N = 100:
+BST                  1354228 nanoseconds
+AVL                  1392762 nanoseconds
+BST(rev-sorted)      3267003 nanoseconds
+AVL(rev-sorted)      528893 nanoseconds
+
+N = 1000:
+BST                  1479939 nanoseconds
+AVL                  23431589 nanoseconds
+BST(rev-sorted)      50691161 nanoseconds
+AVL(rev-sorted)      16593282 nanoseconds
+
+N = 10000:
+BST                  44907945 nanoseconds
+AVL                  2277753361 nanoseconds
+BST(rev-sorted)      1853770682 nanoseconds
+AVL(rev-sorted)      1618368936 nanoseconds
+
+N = 100000:
+BST                  101395234 nanoseconds
+N = 1000000:
+BST                  1387989830 nanoseconds
